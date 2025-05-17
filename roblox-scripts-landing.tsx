@@ -623,7 +623,7 @@ export default function RobloxScriptsLanding() {
   <div className="relative w-full" style={{ paddingBottom: "56.25%" }}>
     <iframe
       className="absolute top-0 left-0 w-full h-full"
-      src="https://streamable.com/e/jr63oa?nocontrols=1"
+      src="https://streamable.com/e/8hxaep?nocontrols=1"
       frameBorder="0"
       allowFullScreen
     ></iframe>
