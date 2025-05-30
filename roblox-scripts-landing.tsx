@@ -181,9 +181,9 @@ export default function RobloxScriptsLanding() {
               transition={{ delay: 0.5, duration: 0.5 }}
             >
               {[
-                { icon: <Shield className="h-4 w-4 text-[#00ff88]" />, text: "Virus Checked" },
+                { icon: <Shield className="h-4 w-4 text-[#00ff88]" />, text: "Anti-Ban" },
                 { icon: <Lock className="h-4 w-4 text-[#00ff88]" />, text: "Secure Download" },
-                { icon: <Zap className="h-4 w-4 text-[#00ff88]" />, text: "One-Click Setup" },
+                { icon: <Zap className="h-4 w-4 text-[#00ff88]" />, text: "Undetected" },
               ].map((badge, index) => (
                 <motion.div
                   key={index}
