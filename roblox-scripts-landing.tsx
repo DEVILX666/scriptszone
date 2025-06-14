@@ -189,8 +189,8 @@ export default function RobloxScriptsLanding() {
             >
               {[
                 { icon: <Shield className="h-4 w-4 text-[#00ff88]" />, text: "Anti-Ban" },
-                { icon: <Lock className="h-4 w-4 text-[#00ff88]" />, text: "Secure Download" },
-                { icon: <Zap className="h-4 w-4 text-[#00ff88]" />, text: "Undetected" },
+                { icon: <Lock className="h-4 w-4 text-[#00ff88]" />, text: "Safe For All Devices" },
+                { icon: <Zap className="h-4 w-4 text-[#00ff88]" />, text: "Mobile/PC Supported" },
               ].map((badge, index) => (
                 <motion.div
                   key={index}
