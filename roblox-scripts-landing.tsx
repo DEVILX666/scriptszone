@@ -258,9 +258,9 @@ export default function RobloxScriptsLanding() {
               { icon: "🛒", name: "Auto Buy" },
               { icon: "⚡", name: "120FPS Boost" },
               { icon: "⚙️", name: "Auto Farm" },
-              { icon: "🔍", name: "ESP" },
+              { icon: "🧩", name: "ESP" },
               { icon: "🌾", name: "Infinite Seeds" },
-              { icon: "🚫", name: "No Cooldowns" },
+              { icon: "🔍", name: "Old Server Finder" },
               { icon: "🌻", name: "Auto Sell" },
               { icon: "🔄", name: "Auto Harvest" },
             ].map((feature, index) => (
