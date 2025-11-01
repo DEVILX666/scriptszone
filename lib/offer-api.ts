@@ -25,6 +25,7 @@ export async function fetchOffers(userIP: string, userAgent: string, maxOffers =
       user_agent: userAgent,
       max: "6",
       min: "6",
+      ctype: "5",
     })
 
     const response = await fetch(`${API_BASE_URL}?${params}`, {
