@@ -51,6 +51,16 @@ export const scripts: Script[] = [
     lockerUrl: "https://installchecker.site/cl/i/gr6l42",
   },
   {
+    id: "steal-brainrot-3",
+    name: "VOIDWARE SCRIPT",
+    game: "99 Nights in the Forest",
+    description: "MULTI FEATURES IN ONE SCRIPT 🔥",
+    category: "Adventure",
+    features: [],
+    thumbnailUrl: "https://imgs.search.brave.com/801yL1EgbNR5iG3TGSLAIlSP3-zcq5YLvHh0YAHpcbU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92b2lk/d2FyZXNjcmlwdC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjUvMDgvVm9pZHdh/cmUtU2NyaXB0LTk5/LU5pZ2h0cy1pbi10/aGUtRm9yZXN0LVNj/cmVlbnNob3QtMy0x/MDI0eDU3Ni53ZWJw",
+    lockerUrl: "https://installchecker.site/cl/i/krl8k8",
+  },
+  {
     id: "99-nights-1",
     name: "DIAMONDS AUTO FARM SCRIPT",
     game: "99 Nights in the Forest",
