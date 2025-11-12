@@ -22,6 +22,16 @@ export const scripts: Script[] = [
   },
   {
     id: "steal-brainrot-1",
+    name: "LASER LAG SCRIPT",
+    game: "Steal a Brainrot",
+    description: "LAGGING EVERYONE IN THE GAME USING LASER + SCRIPT 🔥",
+    category: "Adventure",
+    features: ["Auto Steal", "Item ESP", "Speed Hack", "TELEPORT", "FLY"],
+    thumbnailUrl: "https://i.imgur.com/t6xQ43o.png",
+    lockerUrl: "https://installchecker.site/cl/i/347vg7",
+  },
+  {
+    id: "steal-brainrot-1",
     name: "ROBLOX CHAT FILTER BYPASS SCRIPT",
     game: "Roblox",
     description: "TYPE ANYTHING WITHOUT GETTING FILTERED 🔥",
