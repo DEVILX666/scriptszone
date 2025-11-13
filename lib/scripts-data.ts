@@ -30,6 +30,16 @@ export const scripts: Script[] = [
     thumbnailUrl: "https://i.imgur.com/t6xQ43o.png",
     lockerUrl: "https://installchecker.site/cl/i/347vg7",
   },
+    {
+    id: "steal-brainrot-1",
+    name: "TELEPORT TO BASE IN 0.1 SECOND",
+    game: "Steal a Brainrot",
+    description: "STEAL AND TELEPORT TO BASE IN 0.1 SECOND 🔥",
+    category: "Adventure",
+    features: ["Auto Steal", "Item ESP", "Speed Hack", "TELEPORT", "FLY"],
+    thumbnailUrl: "https://i.imgur.com/6gyfYOZ.png",
+    lockerUrl: "https://installchecker.site/cl/i/347vg7",
+  },
   {
     id: "steal-brainrot-1",
     name: "ROBLOX CHAT FILTER BYPASS SCRIPT",
