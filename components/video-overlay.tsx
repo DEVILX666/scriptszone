@@ -127,7 +127,7 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
         <header className="bg-gradient-to-r from-primary/20 to-secondary/20 border-b border-border/50 px-3 py-2 sm:py-3 text-center flex-shrink-0">
           <h1 className="text-sm sm:text-xl font-bold text-foreground truncate">{currentTranslation.title}</h1>
           <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-            Script: <span className="font-semibold text-primary">{gameName}</span>
+            Scripts: <span className="font-semibold text-primary">{gameName}</span>
           </p>
         </header>
 
