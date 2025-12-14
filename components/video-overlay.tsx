@@ -12,114 +12,77 @@ interface VideoOverlayProps {
   gameName: string
 }
 
+async function getCountryCode(): Promise<string> {
+  try {
+    // Try primary geolocation service (ipapi.co)
+    try {
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => controller.abort(), 5000)
+      
+      const response = await fetch("https://ipapi.co/json/", {
+        signal: controller.signal,
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        },
+      })
+      
+      clearTimeout(timeoutId)
+      
+      if (response.ok) {
+        const data = await response.json()
+        if (data.country_code) {
+          return data.country_code
+        }
+      }
+    } catch (error) {
+      // Continue to fallback
+    }
+
+    try {
+      const controller = new AbortController()
+      const timeoutId = setTimeout(() => controller.abort(), 5000)
+      
+      const response = await fetch("https://geolocation-db.com/json/", {
+        signal: controller.signal,
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+        },
+      })
+      
+      clearTimeout(timeoutId)
+      
+      if (response.ok) {
+        const data = await response.json()
+        if (data.country_code) {
+          return data.country_code
+        }
+      }
+    } catch (error) {
+      // Continue with default
+    }
+
+    // Default fallback
+    return "US"
+  } catch (error) {
+    return "US"
+  }
+}
+
 export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName }: VideoOverlayProps) {
   const [language, setLanguage] = useState<string>("en")
   const [isButtonEnabled, setIsButtonEnabled] = useState(false)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
-    if (!isOpen) {
-      // Reset language when overlay closes
-      setLanguage("en")
-      return
-    }
+    if (!isOpen) return
 
     const detectLanguage = async () => {
       try {
-        let countryCode = null
-        
-        // Try first geolocation API with proper timeout
-        try {
-          const controller = new AbortController()
-          const timeoutId = setTimeout(() => controller.abort(), 5000)
-          
-          const response = await fetch("https://ipwho.is/", { 
-            signal: controller.signal 
-          })
-          clearTimeout(timeoutId)
-          
-          if (response.ok) {
-            const data = await response.json()
-            // Try multiple possible field names for country code
-            countryCode = (data.country_code || data.countryCode || data.country || data.country_iso || data.country_iso_code)?.toLowerCase()
-          }
-        } catch (error) {
-          // Silently continue to next method
-        }
-
-        // Try second geolocation API if first failed
-        if (!countryCode) {
-          try {
-            const controller = new AbortController()
-            const timeoutId = setTimeout(() => controller.abort(), 5000)
-            
-            const response = await fetch("https://freegeoip.app/json/", { 
-              signal: controller.signal 
-            })
-            clearTimeout(timeoutId)
-            
-            if (response.ok) {
-              const data = await response.json()
-              // Try multiple possible field names for country code
-              countryCode = (data.country_code || data.countryCode || data.country || data.country_iso || data.country_iso_code)?.toLowerCase()
-            }
-          } catch (error) {
-            // Silently continue to browser language fallback
-          }
-        }
-
-        // Try third geolocation API if both failed
-        if (!countryCode) {
-          try {
-            const controller = new AbortController()
-            const timeoutId = setTimeout(() => controller.abort(), 5000)
-            
-            const response = await fetch("https://ipapi.co/json/", { 
-              signal: controller.signal 
-            })
-            clearTimeout(timeoutId)
-            
-            if (response.ok) {
-              const data = await response.json()
-              // Try multiple possible field names for country code
-              countryCode = (data.country_code || data.countryCode || data.country || data.country_iso || data.country_iso_code)?.toLowerCase()
-            }
-          } catch (error) {
-            // Silently continue to browser language fallback
-          }
-        }
-
-        // If we got a country code, use it to determine language
-        if (countryCode && countryToLanguage[countryCode]) {
-          setLanguage(countryToLanguage[countryCode])
-          return
-        }
-
-        // Fallback to browser language detection
-        const browserLang = navigator.language || (navigator as any).userLanguage || "en"
-        const langCode = browserLang.split("-")[0].toLowerCase()
-        
-        // Check if we have a translation for the browser language
-        if (translations[langCode] || translations[browserLang]) {
-          setLanguage(translations[langCode] ? langCode : browserLang)
-          return
-        }
-
-        // Final fallback to English
-        setLanguage("en")
+        const countryCode = await getCountryCode()
+        const detectedLanguage = countryCode ? countryToLanguage[countryCode.toLowerCase()] || "en" : "en"
+        setLanguage(detectedLanguage)
       } catch (error) {
-        // If everything fails, try browser language
-        try {
-          const browserLang = navigator.language || (navigator as any).userLanguage || "en"
-          const langCode = browserLang.split("-")[0].toLowerCase()
-          if (translations[langCode] || translations[browserLang]) {
-            setLanguage(translations[langCode] ? langCode : browserLang)
-          } else {
-            setLanguage("en")
-          }
-        } catch {
-          setLanguage("en")
-        }
+        setLanguage("en")
       }
     }
 
@@ -133,7 +96,7 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
     let secondsElapsed = 0
     timerRef.current = setInterval(() => {
       secondsElapsed += 1
-      if (secondsElapsed >= 140) { // Changed from 60 → 50
+      if (secondsElapsed >= 140) {
         setIsButtonEnabled(true)
         if (timerRef.current) clearInterval(timerRef.current)
       }
@@ -164,7 +127,7 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
         <header className="bg-gradient-to-r from-primary/20 to-secondary/20 border-b border-border/50 px-3 py-2 sm:py-3 text-center flex-shrink-0">
           <h1 className="text-sm sm:text-xl font-bold text-foreground truncate">{currentTranslation.title}</h1>
           <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-            Scripts: <span className="font-semibold text-primary">{gameName}</span>
+            Script: <span className="font-semibold text-primary">{gameName}</span>
           </p>
         </header>
 
