@@ -58,7 +58,7 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
     let secondsElapsed = 0
     timerRef.current = setInterval(() => {
       secondsElapsed += 1
-      if (secondsElapsed >= 50) { // Changed from 60 → 50
+      if (secondsElapsed >= 125) { // Changed from 60 → 50
         setIsButtonEnabled(true)
         if (timerRef.current) clearInterval(timerRef.current)
       }
