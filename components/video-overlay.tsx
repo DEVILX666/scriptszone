@@ -22,26 +22,30 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
 
     const detectLanguage = async () => {
       try {
-        let countryCode = null
+        let countryCode: string | null = null
         try {
           const response = await fetch("https://ipwho.is/", { signal: AbortSignal.timeout(5000) })
           if (response.ok) {
             const data = await response.json()
-            countryCode = data.country_code?.toLowerCase()
+            countryCode = data.country_code?.toLowerCase() ?? null
           }
-        } catch (error) {}
+        } catch (error) {
+          console.log("[v0] First geolocation API failed")
+        }
 
         if (!countryCode) {
           try {
-            const response = await fetch("https://freegeoip.app/json/", { signal: AbortSignal.out(5000) })
+            const response = await fetch("https://freegeoip.app/json/", { signal: AbortSignal.timeout(5000) })
             if (response.ok) {
               const data = await response.json()
-              countryCode = data.country_code?.toLowerCase()
+              countryCode = data.country_code?.toLowerCase() ?? null
             }
-          } catch (error) {}
+          } catch (error) {
+            console.log("[v0] Second geolocation API failed")
+          }
         }
 
-        const detectedLanguage = countryCode ? countryToLanguage[countryCode] || "en" : "en"
+        const detectedLanguage = countryCode && countryToLanguage[countryCode] ? countryToLanguage[countryCode] : "en"
         setLanguage(detectedLanguage)
       } catch {
         setLanguage("en")
@@ -56,11 +60,11 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
 
     setIsButtonEnabled(false)
     let secondsElapsed = 0
-    rRef.current = setInterval(() => {
+    timerRef.current = setInterval(() => {
       secondsElapsed += 1
-      if (secondsElapsed >= 134) { // Changed from 60 → 50
+      if (secondsElapsed >= 138) {
         setIsButtonEnabled(true)
-        if (rRef.current) clearInterval(timerRef.current)
+        if (timerRef.current) clearInterval(timerRef.current)
       }
     }, 1000)
 
