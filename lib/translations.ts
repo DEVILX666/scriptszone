@@ -1,267 +1,267 @@
 // Complete translations for all world languages
 export const translations: Record<string, { title: string; button: string }> = {
   // English
-  en: { title: "How To Download Your Premium Scripts", button: "Continue" },
+  en: { title: "How To Get Your Premium Scripts", button: "Continue" },
   // Spanish
-  es: { title: "Cómo Descargar Tus Scripts Premium", button: "Continuar" },
+  es: { title: "Cómo Obtener Tus Scripts Premium", button: "Continuar" },
   // French
-  fr: { title: "Comment Télécharger Vos Scripts Premium", button: "Continuer" },
+  fr: { title: "Comment Obtenir Vos Scripts Premium", button: "Continuer" },
   // German
-  de: { title: "So Laden Sie Ihre Premium-Skripte Herunter", button: "Fortsetzen" },
+  de: { title: "So Erhalten Sie Ihre Premium-Skripte", button: "Fortsetzen" },
   // Italian
-  it: { title: "Come Scaricare I Tuoi Script Premium", button: "Continua" },
+  it: { title: "Come Ottenere I Tuoi Script Premium", button: "Continua" },
   // Portuguese
-  pt: { title: "Como Baixar Seus Scripts Premium", button: "Continuar" },
+  pt: { title: "Como Obter Seus Scripts Premium", button: "Continuar" },
   // Russian
-  ru: { title: "Как загрузить ваши премиум-скрипты", button: "Продолжить" },
+  ru: { title: "Как получить ваши премиум-скрипты", button: "Продолжить" },
   // Japanese
-  ja: { title: "プレミアムスクリプトをダウンロードする方法", button: "続行" },
+  ja: { title: "プレミアムスクリプトを取得する方法", button: "続行" },
   // Chinese (Simplified)
-  zh: { title: "如何下载您的高级脚本", button: "继续" },
+  zh: { title: "如何获取您的高级脚本", button: "继续" },
   // Chinese (Traditional)
-  "zh-TW": { title: "如何下載您的高級腳本", button: "繼續" },
+  "zh-TW": { title: "如何獲取您的高級腳本", button: "繼續" },
   // Korean
-  ko: { title: "프리미엄 스크립트를 다운로드하는 방법", button: "계속" },
+  ko: { title: "프리미엄 스크립트를 얻는 방법", button: "계속" },
   // Arabic
-  ar: { title: "كيفية تنزيل البرامج النصية المميزة الخاصة بك", button: "متابعة" },
+  ar: { title: "كيفية الحصول على البرامج النصية المميزة الخاصة بك", button: "متابعة" },
   // Turkish
-  tr: { title: "Premium Komut Dosyalarını İndirme Yöntemi", button: "Devam Et" },
+  tr: { title: "Premium Komut Dosyalarını Alma Yöntemi", button: "Devam Et" },
   // Polish
-  pl: { title: "Jak pobrać premium skrypty", button: "Kontynuuj" },
+  pl: { title: "Jak uzyskać premium skrypty", button: "Kontynuuj" },
   // Dutch
-  nl: { title: "Hoe u uw premium scripts downloadt", button: "Doorgaan" },
+  nl: { title: "Hoe u uw premium scripts krijgt", button: "Doorgaan" },
   // Swedish
-  sv: { title: "Hur du laddar ner dina premium-skript", button: "Fortsätt" },
+  sv: { title: "Hur du får dina premium-skript", button: "Fortsätt" },
   // Danish
-  da: { title: "Sådan downloader du dine premium-scripts", button: "Fortsæt" },
+  da: { title: "Sådan får du dine premium-scripts", button: "Fortsæt" },
   // Norwegian
-  no: { title: "Slik laster du ned premium-skriptene dine", button: "Fortsett" },
+  no: { title: "Slik får du premium-skriptene dine", button: "Fortsett" },
   // Finnish
-  fi: { title: "Kuinka lataat premium-komentosarjasi", button: "Jatka" },
+  fi: { title: "Kuinka saat premium-komentosarjasi", button: "Jatka" },
   // Czech
-  cs: { title: "Jak stáhnout své prémiové skripty", button: "Pokračovat" },
+  cs: { title: "Jak získat své prémiové skripty", button: "Pokračovat" },
   // Hungarian
-  hu: { title: "Hogyan töltsd le prémium szkriptjeidet", button: "Folytatás" },
+  hu: { title: "Hogyan kapd meg prémium szkriptjeidet", button: "Folytatás" },
   // Romanian
-  ro: { title: "Cum să descărcați scripturile dvs. premium", button: "Continuați" },
+  ro: { title: "Cum să obțineți scripturile dvs. premium", button: "Continuați" },
   // Greek
-  el: { title: "Πώς να κατεβάσετε τα Premium Scripts σας", button: "Συνέχεια" },
+  el: { title: "Πώς να λάβετε τα Premium Scripts σας", button: "Συνέχεια" },
   // Hebrew
-  he: { title: "כיצד להוריד את הסקריפטים המעולים שלך", button: "המשך" },
+  he: { title: "כיצד לקבל את הסקריפטים המעולים שלך", button: "המשך" },
   // Thai
-  th: { title: "วิธีดาวน์โหลดสคริปต์พรีเมียมของคุณ", button: "ต่อไป" },
+  th: { title: "วิธีรับสคริปต์พรีเมียมของคุณ", button: "ต่อไป" },
   // Vietnamese
-  vi: { title: "Cách tải xuống các tập lệnh cao cấp của bạn", button: "Tiếp tục" },
+  vi: { title: "Cách lấy các tập lệnh cao cấp của bạn", button: "Tiếp tục" },
   // Indonesian
-  id: { title: "Cara Mengunduh Skrip Premium Anda", button: "Lanjutkan" },
+  id: { title: "Cara Mendapatkan Skrip Premium Anda", button: "Lanjutkan" },
   // Thai
-  tl: { title: "Paano I-download ang Iyong Premium Scripts", button: "Magpatuloy" },
+  tl: { title: "Paano Makakuha ng Iyong Premium Scripts", button: "Magpatuloy" },
   // Hindi
-  hi: { title: "अपनी प्रीमियम स्क्रिप्ट कैसे डाउनलोड करें", button: "जारी रखें" },
+  hi: { title: "अपनी प्रीमियम स्क्रिप्ट कैसे प्राप्त करें", button: "जारी रखें" },
   // Bengali
-  bn: { title: "আপনার প্রিমিয়াম স্ক্রিপ্ট কীভাবে ডাউনলোড করবেন", button: "চালিয়ে যান" },
+  bn: { title: "আপনার প্রিমিয়াম স্ক্রিপ্ট কীভাবে পাবেন", button: "চালিয়ে যান" },
   // Urdu
-  ur: { title: "اپنی پریمیم اسکرپٹ کو ڈاؤن لوڈ کرنے کا طریقہ", button: "جاری رکھیں" },
+  ur: { title: "اپنی پریمیم اسکرپٹ کیسے حاصل کریں", button: "جاری رکھیں" },
   // Farsi/Persian
-  fa: { title: "نحوه دانلود اسکریپت های اختصاصی خود", button: "ادامه" },
+  fa: { title: "نحوه دریافت اسکریپت های اختصاصی خود", button: "ادامه" },
   // Burmese
-  my: { title: "သင့်ကျောင်းဆိုင်ရာစာသားများကိုဆွဲချပြုလုပ်ရန်", button: "ဆက်လက်" },
+  my: { title: "သင့်ကျောင်းဆိုင်ရာစာသားများကိုရယူရန်", button: "ဆက်လက်" },
   // Khmer
-  km: { title: "របៀបដក ស្ក្រីបប្រិមីយ៉ូមរបស់អ្នក", button: "បន្ត" },
+  km: { title: "របៀបទទួលបានស្ក្រីបប្រិមីយ៉ូមរបស់អ្នក", button: "បន្ត" },
   // Lao
-  lo: { title: "ວິທີການດາວໂຫຼດ Premium Scripts ຂອງທ່ານ", button: "ສືບຕໍ່" },
+  lo: { title: "ວິທີການເອົາ Premium Scripts ຂອງທ່ານ", button: "ສືບຕໍ່" },
   // Mongolian
-  mn: { title: "Таны Премиум Скриптүүдийг хэрхэн татаж авах", button: "Үргэлжүүлэх" },
+  mn: { title: "Таны Премиум Скриптүүдийг хэрхэн авах", button: "Үргэлжүүлэх" },
   // Georgian
-  ka: { title: "როგორ ჩამოტვირთოთ თქვენი პრემიუმ სკრიპტები", button: "გაგრძელება" },
+  ka: { title: "როგორ მიიღოთ თქვენი პრემიუმ სკრიპტები", button: "გაგრძელება" },
   // Armenian
-  hy: { title: "Ինչպես ներբեռնել ձեր Premium Scripts", button: "Շարունակել" },
+  hy: { title: "Ինչպես ստանալ ձեր Premium Scripts", button: "Շարունակել" },
   // Ukrainian
-  uk: { title: "Як завантажити свої преміум-скрипти", button: "Продовжити" },
+  uk: { title: "Як отримати свої преміум-скрипти", button: "Продовжити" },
   // Belarusian
-  be: { title: "Як завантажыць свае скрыпты Premium", button: "Працягнуць" },
+  be: { title: "Як атрымаць свае скрыпты Premium", button: "Працягнуць" },
   // Kazakh
-  kk: { title: "Өзіңіздің premium сценарийлеріңізді қалай жүктеп алу керек", button: "Жалғастыру" },
+  kk: { title: "Өзіңіздің premium сценарийлеріңізді қалай алуға болады", button: "Жалғастыру" },
   // Uzbek
-  uz: { title: "Premium Skriptlaringizni Qanday Yuklab Olish Kerak", button: "Davom Etish" },
+  uz: { title: "Premium Skriptlaringizni Qanday Olish Kerak", button: "Davom Etish" },
   // Serbian
-  sr: { title: "Како преузети своје премиум скрипте", button: "Наставити" },
+  sr: { title: "Како добити своје премиум скрипте", button: "Наставити" },
   // Croatian
-  hr: { title: "Kako preuzeti svoje premium skripte", button: "Nastavite" },
+  hr: { title: "Kako dobiti svoje premium skripte", button: "Nastavite" },
   // Slovenian
-  sl: { title: "Kako prenesti svoje premium skripte", button: "Nadaljuj" },
+  sl: { title: "Kako dobiti svoje premium skripte", button: "Nadaljuj" },
   // Slovak
-  sk: { title: "Ako si stiahnuť svoje prémiové skripty", button: "Pokračovať" },
+  sk: { title: "Ako získať svoje prémiové skripty", button: "Pokračovať" },
   // Bulgarian
-  bg: { title: "Как да изтеглите своите премиум скрипти", button: "Продължи" },
+  bg: { title: "Как да получите своите премиум скрипти", button: "Продължи" },
   // Icelandic
-  is: { title: "Hvernig á að hlaða niður Premium Skriptum þínum", button: "Halda Áfram" },
+  is: { title: "Hvernig á að fá Premium Skriptum þínum", button: "Halda Áfram" },
   // Irish
-  ga: { title: "Conas a Fhéadfaidh do Dhréachtanna Premium a Íoslódáil", button: "Lean Ar Aghaidh" },
+  ga: { title: "Conas a Fháil ar do Dhréachtanna Premium", button: "Lean Ar Aghaidh" },
   // Afrikaans
-  af: { title: "Hoe om jou premium-skripte af te laai", button: "Gaan Voort" },
+  af: { title: "Hoe om jou premium-skripte te kry", button: "Gaan Voort" },
   // Swahili
-  sw: { title: "Jinsi ya Kupaakua Hati za Premium Zako", button: "Endelea" },
+  sw: { title: "Jinsi ya Kupata Hati za Premium Zako", button: "Endelea" },
   // Zulu
-  zu: { title: "Indlela Yokulanda Izinto Zakho Ze-Premium", button: "Qhubeka" },
+  zu: { title: "Indlela Yokuthola Izinto Zakho Ze-Premium", button: "Qhubeka" },
   // Xhosa
-  xh: { title: "Indlela Yokulanda Izinto Zakho Ze-Premium", button: "Qhubeka" },
+  xh: { title: "Indlela Yokuthola Izinto Zakho Ze-Premium", button: "Qhubeka" },
   // Sotho
-  st: { title: "Mokhoa oa ho Romolla Likhoele tsa Hao tsa Premium", button: "Tsoela Pele" },
+  st: { title: "Mokhoa oa ho Fumana Likhoele tsa Hao tsa Premium", button: "Tsoela Pele" },
   // Tagalog
-  tg: { title: "Paano I-download ang Iyong Premium Scripts", button: "Magpatuloy" },
+  tg: { title: "Paano Makakuha ng Iyong Premium Scripts", button: "Magpatuloy" },
   // Malay
-  ms: { title: "Cara Memuat Turun Skrip Premium Anda", button: "Teruskan" },
+  ms: { title: "Cara Mendapatkan Skrip Premium Anda", button: "Teruskan" },
   // Singaporean Chinese
-  "zh-SG": { title: "如何下载您的高级脚本", button: "继续" },
+  "zh-SG": { title: "如何获取您的高级脚本", button: "继续" },
   // Latvian
-  lv: { title: "Kā Lejūtēt Jūsu Premium Skriptus", button: "Turpināt" },
+  lv: { title: "Kā Iegūt Jūsu Premium Skriptus", button: "Turpināt" },
   // Lithuanian
-  lt: { title: "Kaip Atsisiųsti Jūsų Premium Skriptus", button: "Tęsti" },
+  lt: { title: "Kaip Gauti Jūsų Premium Skriptus", button: "Tęsti" },
   // Estonian
-  et: { title: "Kuidas Laadida alla Teie Premium Skriptid", button: "Jätka" },
+  et: { title: "Kuidas Saada Teie Premium Skriptid", button: "Jätka" },
   // Maltese
-  mt: { title: "Maltese", button: "Kompli" },
+  mt: { title: "Kif Tikseb l-Iskripts Premium Tiegħek", button: "Kompli" },
   // Luxembourgish
-  lb: { title: "Luxembourgish", button: "Weidergoen" },
+  lb: { title: "Wéi Dir Är Premium Skripte kritt", button: "Weidergoen" },
   // Welsh
-  cy: { title: "Welsh", button: "Parhau" },
+  cy: { title: "Sut i Gael Eich Sgriptiau Premiwm", button: "Parhau" },
   // Basque
-  eu: { title: "Basque", button: "Jarraitu" },
+  eu: { title: "Nola Lortu Zure Premium Scripts", button: "Jarraitu" },
   // Catalan
-  ca: { title: "Catalan", button: "Continuar" },
+  ca: { title: "Com Obtenir Els Teus Scripts Premium", button: "Continuar" },
   // Galician
-  gl: { title: "Galician", button: "Continuar" },
+  gl: { title: "Como Obter Os Teus Scripts Premium", button: "Continuar" },
   // Breton
-  br: { title: "Breton", button: "Kenderc'h" },
+  br: { title: "Penaos Kaout Ho Scripts Premium", button: "Kenderc'h" },
   // Occitan
-  oc: { title: "Occitan", button: "Contunhar" },
+  oc: { title: "Cossí Obtenir Vòstres Scripts Premium", button: "Contunhar" },
   // Corsican
-  co: { title: "Corsican", button: "Continuà" },
+  co: { title: "Cumu Ottene I Vostri Scripts Premium", button: "Continuà" },
   // Sardinian
-  sc: { title: "Sardinian", button: "Sighi" },
+  sc: { title: "Comente Otènnere Sos Tuos Scripts Premium", button: "Sighi" },
   // Friulian
-  fur: { title: "Friulian", button: "Continovà" },
+  fur: { title: "Cemût Otignî i Tiei Scripts Premium", button: "Continovà" },
   // Romansh
-  rm: { title: "Romansh", button: "Cuntinuar" },
+  rm: { title: "Co Obtegnair Voss Scripts Premium", button: "Cuntinuar" },
   // Albanian
-  sq: { title: "Albanian", button: "Vazhdo" },
+  sq: { title: "Si Të Merrni Skriptet Tuaja Premium", button: "Vazhdo" },
   // Bosnian
-  bs: { title: "Bosnian", button: "Nastavi" },
+  bs: { title: "Kako Dobiti Svoje Premium Skripte", button: "Nastavi" },
   // Macedonian
-  mk: { title: "Macedonian", button: "Продолжи" },
+  mk: { title: "Како да ги добиете вашите премиум скрипти", button: "Продолжи" },
   // Uyghur
-  ug: { title: "Uyghur", button: "داۋاملاشتۇرۇڭ" },
+  ug: { title: "پريمىيۇم سكرىپتلىرىڭىزنى قانداق ئېلىش", button: "داۋاملاشتۇرۇڭ" },
   // Tibetan
-  bo: { title: "Tibetan", button: "མུ་མཐུད་རྒྱུ" },
+  bo: { title: "ཁྱེད་ཀྱི་Premium Scripts ཇི་ལྟར་ཐོབ་པ", button: "མུ་མཐུད་རྒྱུ" },
   // Scottish Gaelic
-  gd: { title: "Scottish Gaelic", button: "Lean air adhart" },
+  gd: { title: "Mar a Gheibh Thu Do Scripts Premium", button: "Lean air adhart" },
   // Maori
-  mi: { title: "Maori", button: "Haere Tonu" },
+  mi: { title: "Me Pēhea te Whiwhi i Ō Scripts Premium", button: "Haere Tonu" },
   // Samoan
-  sm: { title: "Samoan", button: "Faagaloina" },
+  sm: { title: "Faʻafefea Ona Maua Au Scripts Premium", button: "Faagaloina" },
   // Tongan
-  to: { title: "Tongan", button: "Talauni" },
+  to: { title: "Ko e Fakatotolo 'o Hono Ma'u 'a Hono Scripts Premium", button: "Talauni" },
   // Fijian
-  fj: { title: "Fijian", button: "Solia Mo" },
+  fj: { title: "Vakacava Me Kunea Na Nomu Scripts Premium", button: "Solia Mo" },
   // Palauan
-  pa: { title: "Palauan", button: "Desubed" },
+  pa: { title: "Ke Mlecheb el Merael a Scripts Premium Eme", button: "Desubed" },
   // Marshallese
-  mh: { title: "Marshallese", button: "Etal" },
+  mh: { title: "Won An Jejej Aelōñ Scripts Premium Eok", button: "Etal" },
   // Micronesian
-  fm: { title: "Micronesian", button: "Eman" },
+  fm: { title: "Pwung Pwung Mele Scripts Premium Eom", button: "Eman" },
   // Solomon Islands Pidgin
-  pi: { title: "Pidgin", button: "I gogo" },
+  pi: { title: "Hao Long Yu Gatim Premium Scripts Blong Yu", button: "I gogo" },
   // Nauruan
-  nr: { title: "Nauruan", button: "Emarien" },
+  nr: { title: "Eawe Eawe Eawe Scripts Premium Eam", button: "Emarien" },
   // Kiribati
-  ki: { title: "Kiribati", button: "Tia" },
+  ki: { title: "Tera Te Aika Te Aika Scripts Premium Eom", button: "Tia" },
   // Tuvaluan
-  tv: { title: "Tuvaluan", button: "Faagaloina" },
+  tv: { title: "Fakafefea O Mafai Nei O Scripts Premium Eom", button: "Faagaloina" },
   // Niuean
-  nu: { title: "Niuean", button: "Faagaloina" },
+  nu: { title: "Fakafefea Ke Mafai Nei O Scripts Premium Eom", button: "Faagaloina" },
   // Turkmen
-  tk: { title: "Turkmen", button: "Dowam etmek" },
+  tk: { title: "Premium Skriptleriňizi Nädip Almaly", button: "Dowam etmek" },
   // Tajik
-  tt: { title: "Tajik", button: "Давомдиҳед" },
+  tt: { title: "Чӣ тавр Скриптҳои Премиуми Худатонро Гиред", button: "Давомдиҳед" },
   // Kyrgyz
-  ky: { title: "Kyrgyz", button: "Улантуу" },
+  ky: { title: "Premium Скрипттериңизди Кантип Алууга Болот", button: "Улантуу" },
   // Azerbaijani
-  az: { title: "Azerbaijani", button: "Davam edin" },
+  az: { title: "Premium Skriptlərinizi Necə Əldə Etmək Olar", button: "Davam edin" },
   // Tatar
-  tt: { title: "Tatar", button: "Дәвам итегез" },
+  tt: { title: "Премиум Скриптларыгызны Ничек Алу", button: "Дәвам итегез" },
   // Avar
-  av: { title: "Avar", button: "Гьан дареде" },
+  av: { title: "Премиум Скриптзал ЦӀалун Рор", button: "Гьан дареде" },
   // Chechen
-  ce: { title: "Chechen", button: "Барьяр" },
+  ce: { title: "Премиум Скрипташ Массо А Хьала", button: "Барьяр" },
   // Ossetian
-  os: { title: "Ossetian", button: "Уадай" },
+  os: { title: "Премиум Скрипттæ Кæдæй Ахæссын", button: "Уадай" },
   // Udmurt
-  udm: { title: "Udmurt", button: "Вераматы" },
+  udm: { title: "Премиум Скриптъёсты Кызьы Асьсэ", button: "Вераматы" },
   // Mari
-  mhr: { title: "Mari", button: "Йӱкыжы" },
+  mhr: { title: "Премиум Скрипт-влакым Кӧ Кучыкташ", button: "Йӱкыжы" },
   // Moksha
-  mdf: { title: "Moksha", button: "Кармасы" },
+  mdf: { title: "Премиум Скриптнень Кода Содамс", button: "Кармасы" },
   // Erza
-  myv: { title: "Erza", button: "Кармасы" },
+  myv: { title: "Премиум Скриптнень Кода Содамс", button: "Кармасы" },
   // Quechua
-  qu: { title: "Quechua", button: "Ama llaquiy" },
+  qu: { title: "Imaynatam Premium Scripts Ykita Chaskiy", button: "Ama llaquiy" },
   // Aymara
-  ay: { title: "Aymara", button: "Ampara" },
+  ay: { title: "Kunjamata Premium Scripts Uka Chaskita", button: "Ampara" },
   // Guarani
-  gn: { title: "Guarani", button: "Peje apytuma" },
+  gn: { title: "Mba'éichapa Eguerekóta Nde Premium Scripts", button: "Peje apytuma" },
   // Nahuatl
-  nah: { title: "Nahuatl", button: "Nikan chiuh" },
+  nah: { title: "Quenin Ticmacaz Premium Scripts Mo", button: "Nikan chiuh" },
   // Mapudungun
-  arn: { title: "Mapudungun", button: "Kompan" },
+  arn: { title: "Chumngelu Amulaymiñ Premium Scripts Mo", button: "Kompan" },
   // Yucatec Maya
-  yua: { title: "Yucatec Maya", button: "Kixtal" },
+  yua: { title: "Bix U Kuchik A Premium Scripts", button: "Kixtal" },
   // K'iche'
-  quc: { title: "K'iche'", button: "Tatik" },
+  quc: { title: "Jas Ub'anik Ri A Premium Scripts", button: "Tatik" },
   // Khmer
-  km: { title: "Khmer", button: "បន្ត" },
+  km: { title: "របៀបទទួលបានស្ក្រីបប្រិមីយ៉ូមរបស់អ្នក", button: "បន្ត" },
   // Northern Sotho/Sepedi
-  nso: { title: "Northern Sotho", button: "Tsoela Pele" },
+  nso: { title: "Mokgwa Wa Ho Fumana Likhoele Tsa Hao Tsa Premium", button: "Tsoela Pele" },
   // Tswana
-  tn: { title: "Tswana", button: "Tsoela Pele" },
+  tn: { title: "Mokgwa Wa Go Fumana Dikhoele Tsa Gago Tsa Premium", button: "Tsoela Pele" },
   // Tigrinya
-  ti: { title: "Tigrinya", button: "ቀጻሊ" },
+  ti: { title: "ከመይ ከም ዝተረኽብ ናይ እንተ ዝረኸብካ ፕሪሚየም ስክሪፕት", button: "ቀጻሊ" },
   // Amharic
-  am: { title: "Amharic", button: "ቀጽሉ" },
+  am: { title: "የፕሪሚየም ስክሪፕቶችዎን እንዴት ማግኘት እንደሚቻል", button: "ቀጽሉ" },
   // Oromo
-  om: { title: "Oromo", button: "Itti fufi" },
+  om: { title: "Akkamitti Premium Scripts Keessan Argachuu Dandeessan", button: "Itti fufi" },
   // Somali
-  so: { title: "Somali", button: "Sii Wad" },
+  so: { title: "Sida Loo Helo Premium Scripts Aad", button: "Sii Wad" },
   // Hausa
-  ha: { title: "Hausa", button: "Ci gaba" },
+  ha: { title: "Yadda Ake Samun Premium Scripts Naku", button: "Ci gaba" },
   // Igbo
-  ig: { title: "Igbo", button: "Gaa n'ihu" },
+  ig: { title: "Otu E Si Enweta Premium Scripts Gị", button: "Gaa n'ihu" },
   // Yoruba
-  yo: { title: "Yoruba", button: "Tẹ̀ sílẹ̀" },
+  yo: { title: "Bawo Ni O Ṣe Le Gba Premium Scripts Rẹ", button: "Tẹ̀ sílẹ̀" },
   // Wolof
-  wo: { title: "Wolof", button: "Jeexale" },
+  wo: { title: "Naka La Ngay Joxe Premium Scripts Yi", button: "Jeexale" },
   // Fula/Fulani
-  ff: { title: "Fula", button: "Jartu" },
+  ff: { title: "No Ndee Njiytaa Premium Scripts Maɓɓe", button: "Jartu" },
   // Bambara
-  bm: { title: "Bambara", button: "Jira sira" },
+  bm: { title: "I Ka Kɛ Cogo Diyɛ Na Ka Sɔrɔ Premium Scripts I Ma", button: "Jira sira" },
   // Twi/Akan
-  ak: { title: "Akan", button: "Kɔ so" },
+  ak: { title: "Sɛnea Wobɛnya Wo Premium Scripts", button: "Kɔ so" },
   // Ewe
-  ee: { title: "Ewe", button: "Tsitre ade" },
+  ee: { title: "Ame Nya Wò Premium Scripts", button: "Tsitre ade" },
   // Shona
-  sn: { title: "Shona", button: "Endekai" },
+  sn: { title: "Maitiro Ekutora Premium Scripts Dzenyu", button: "Endekai" },
   // Tonga
-  toi: { title: "Tonga", button: "Endekai" },
+  toi: { title: "Maitiro Ekutora Premium Scripts Dzenyu", button: "Endekai" },
   // Nyanja/Chichewa
-  ny: { title: "Nyanja", button: "Pitirizani" },
+  ny: { title: "Njira Yomwe Mungapeze Premium Scripts Yanu", button: "Pitirizani" },
   // Rundi
-  rn: { title: "Rundi", button: "Komeza" },
+  rn: { title: "Uko Woshobora Kwakira Premium Scripts Zawe", button: "Komeza" },
   // Rwandan
-  rw: { title: "Kinyarwanda", button: "Komeza" },
+  rw: { title: "Uko Woshobora Kwakira Premium Scripts Zawe", button: "Komeza" },
   // Malagasy
-  mg: { title: "Malagasy", button: "Tohizo" },
+  mg: { title: "Ahoana No Ahazoana Ny Premium Scripts Anao", button: "Tohizo" },
   // Default fallback
-  default: { title: "How To Download Your Premium Scripts", button: "Continue" },
+  default: { title: "How To Get Your Premium Scripts", button: "Continue" },
 }
 
 // Country code to language mapping
