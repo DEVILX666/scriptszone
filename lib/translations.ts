@@ -183,7 +183,7 @@ export const translations: Record<string, { title: string; button: string }> = {
   // Turkmen
   tk: { title: "Premium Skriptleriňizi Nädip Almaly", button: "Dowam etmek" },
   // Tajik
-  tt: { title: "Чӣ тавр Скриптҳои Премиуми Худатонро Гиред", button: "Давомдиҳед" },
+  tj: { title: "Чӣ тавр Скриптҳои Премиуми Худатонро Гиред", button: "Давомдиҳед" },
   // Kyrgyz
   ky: { title: "Premium Скрипттериңизди Кантип Алууга Болот", button: "Улантуу" },
   // Azerbaijani
@@ -218,8 +218,8 @@ export const translations: Record<string, { title: string; button: string }> = {
   yua: { title: "Bix U Kuchik A Premium Scripts", button: "Kixtal" },
   // K'iche'
   quc: { title: "Jas Ub'anik Ri A Premium Scripts", button: "Tatik" },
-  // Khmer
-  km: { title: "របៀបទទួលបានស្ក្រីបប្រិមីយ៉ូមរបស់អ្នក", button: "បន្ត" },
+  // Khmer (duplicate key removed; keep only the main Khmer entry above)
+  // km: { title: "របៀបទទួលបានស្ក្រីបប្រិមីយ៉ូមរបស់អ្នក", button: "បន្ត" },
   // Northern Sotho/Sepedi
   nso: { title: "Mokgwa Wa Ho Fumana Likhoele Tsa Hao Tsa Premium", button: "Tsoela Pele" },
   // Tswana
@@ -268,7 +268,8 @@ export const translations: Record<string, { title: string; button: string }> = {
 export const countryToLanguage: Record<string, string> = {
   // English-speaking countries
   us: "en",
-  gb: "cy", // Override for Welsh users
+  gb: "en", // United Kingdom - English
+  uk: "en", // Safety: some APIs may return "UK" instead of "GB"
   au: "en",
   ca: "en",
   nz: "en",
@@ -300,7 +301,8 @@ export const countryToLanguage: Record<string, string> = {
   // French-speaking countries
   fr: "fr",
   be: "fr", // Primary French
-  ca: "fr",
+  // For Canada we already map to English above; keep this French mapping only for French territories
+  // ca: "fr",
   sn: "fr",
   ci: "fr",
   cd: "fr",
@@ -455,7 +457,8 @@ export const countryToLanguage: Record<string, string> = {
   // Zulu/South Africa
   zu: "zu",
   // Sotho/South Africa
-  st: "st",
+  // st already mapped above; remove duplicate
+  // st: "st",
   // Malay/Malaysia
   my: "ms",
   // Default fallback
