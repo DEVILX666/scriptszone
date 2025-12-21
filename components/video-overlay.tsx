@@ -71,6 +71,7 @@ async function getCountryCode(): Promise<string> {
 export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName }: VideoOverlayProps) {
   const [language, setLanguage] = useState<string>("en")
   const [isButtonEnabled, setIsButtonEnabled] = useState(false)
+  const [timeRemaining, setTimeRemaining] = useState<number>(140)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
@@ -93,13 +94,18 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
     if (!isOpen) return
 
     setIsButtonEnabled(false)
-    let secondsElapsed = 0
+    setTimeRemaining(140)
+    
     timerRef.current = setInterval(() => {
-      secondsElapsed += 1
-      if (secondsElapsed >= 140) {
-        setIsButtonEnabled(true)
-        if (timerRef.current) clearInterval(timerRef.current)
-      }
+      setTimeRemaining((prev) => {
+        const newTime = prev - 1
+        if (newTime <= 0) {
+          setIsButtonEnabled(true)
+          if (timerRef.current) clearInterval(timerRef.current)
+          return 0
+        }
+        return newTime
+      })
     }, 1000)
 
     return () => {
@@ -116,6 +122,12 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
     }
   }
 
+  const formatTime = (seconds: number): string => {
+    const mins = Math.floor(seconds / 60)
+    const secs = seconds % 60
+    return `${mins}:${secs.toString().padStart(2, "0")}`
+  }
+
   const currentTranslation = translations[language] || translations.en
 
   if (!isOpen) return null
@@ -127,7 +139,7 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
         <header className="bg-gradient-to-r from-primary/20 to-secondary/20 border-b border-border/50 px-3 py-2 sm:py-3 text-center flex-shrink-0">
           <h1 className="text-sm sm:text-xl font-bold text-foreground truncate">{currentTranslation.title}</h1>
           <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-            Scripts: <span className="font-semibold text-primary">{gameName}</span>
+            Script: <span className="font-semibold text-primary">{gameName}</span>
           </p>
         </header>
 
@@ -153,7 +165,10 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
                 : "bg-gray-600 cursor-not-allowed text-gray-300 text-base sm:text-lg"
             }`}
           >
-            {currentTranslation.button}
+            {isButtonEnabled 
+              ? currentTranslation.button 
+              : `${currentTranslation.button} (${formatTime(timeRemaining)})`
+            }
           </Button>
         </footer>
       </div>
