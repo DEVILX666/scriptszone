@@ -3,41 +3,41 @@ export const translations: Record<string, { title: string; button: string; watch
   // English
   en: { title: "How To Get My Premium Scripts For Free", button: "Continue", watchText: "Watch the video till the end" },
   // Spanish
-  es: { title: "Cómo Obtener Mis Scripts Premium Gratis", button: "Continuar" },
+  es: { title: "Cómo Obtener Mis Scripts Premium Gratis", button: "Continuar", watchText: "Mira el video hasta el final" },
   // French
-  fr: { title: "Comment Obtenir Mes Scripts Premium Gratuitement", button: "Continuer" },
+  fr: { title: "Comment Obtenir Mes Scripts Premium Gratuitement", button: "Continuer", watchText: "Regarde la vidéo jusqu'à la fin" },
   // German
-  de: { title: "So Erhalten Sie Meine Premium-Skripte Kostenlos", button: "Fortsetzen" },
+  de: { title: "So Erhalten Sie Meine Premium-Skripte Kostenlos", button: "Fortsetzen", watchText: "Schau das Video bis zum Ende an" },
   // Italian
-  it: { title: "Come Ottenere I Miei Script Premium Gratis", button: "Continua" },
+  it: { title: "Come Ottenere I Miei Script Premium Gratis", button: "Continua", watchText: "Guarda il video fino alla fine" },
   // Portuguese
-  pt: { title: "Como Obter Meus Scripts Premium Grátis", button: "Continuar" },
+  pt: { title: "Como Obter Meus Scripts Premium Grátis", button: "Continuar", watchText: "Assista ao vídeo até o fim" },
   // Russian
-  ru: { title: "Как получить мои премиум-скрипты бесплатно", button: "Продолжить" },
+  ru: { title: "Как получить мои премиум-скрипты бесплатно", button: "Продолжить", watchText: "Смотрите видео до конца" },
   // Japanese
-  ja: { title: "プレミアムスクリプトを無料で取得する方法", button: "続行" },
+  ja: { title: "プレミアムスクリプトを無料で取得する方法", button: "続行", watchText: "動画を最後まで見てください" },
   // Chinese (Simplified)
-  zh: { title: "如何免费获取我的高级脚本", button: "继续" },
+  zh: { title: "如何免费获取我的高级脚本", button: "继续", watchText: "请将视频观看到最后" },
   // Chinese (Traditional)
-  "zh-TW": { title: "如何免費獲取我的高級腳本", button: "繼續" },
+  "zh-TW": { title: "如何免費獲取我的高級腳本", button: "繼續", watchText: "請將影片看到最後" },
   // Korean
-  ko: { title: "프리미엄 스크립트를 무료로 얻는 방법", button: "계속" },
+  ko: { title: "프리미엄 스크립트를 무료로 얻는 방법", button: "계속", watchText: "영상 끝까지 시청해 주세요" },
   // Arabic
-  ar: { title: "كيفية الحصول على البرامج النصية المميزة الخاصة بي مجانًا", button: "متابعة" },
+  ar: { title: "كيفية الحصول على البرامج النصية المميزة الخاصة بي مجانًا", button: "متابعة", watchText: "شاهد الفيديو حتى النهاية" },
   // Turkish
-  tr: { title: "Premium Komut Dosyalarımı Ücretsiz Alma Yöntemi", button: "Devam Et" },
+  tr: { title: "Premium Komut Dosyalarımı Ücretsiz Alma Yöntemi", button: "Devam Et", watchText: "Videoyu sonuna kadar izleyin" },
   // Polish
-  pl: { title: "Jak uzyskać moje premium skrypty za darmo", button: "Kontynuuj" },
+  pl: { title: "Jak uzyskać moje premium skrypty za darmo", button: "Kontynuuj", watchText: "Obejrzyj film do końca" },
   // Dutch
-  nl: { title: "Hoe u mijn premium scripts gratis krijgt", button: "Doorgaan" },
+  nl: { title: "Hoe u mijn premium scripts gratis krijgt", button: "Doorgaan", watchText: "Bekijk de video tot het einde" },
   // Swedish
-  sv: { title: "Hur du får mina premium-skript gratis", button: "Fortsätt" },
+  sv: { title: "Hur du får mina premium-skript gratis", button: "Fortsätt", watchText: "Titta på videon ända till slutet" },
   // Danish
-  da: { title: "Sådan får du mine premium-scripts gratis", button: "Fortsæt" },
+  da: { title: "Sådan får du mine premium-scripts gratis", button: "Fortsæt", watchText: "Se videoen helt til slut" },
   // Norwegian
-  no: { title: "Slik får du mine premium-skript gratis", button: "Fortsett" },
+  no: { title: "Slik får du mine premium-skript gratis", button: "Fortsett", watchText: "Se videoen helt til slutt" },
   // Finnish
-  fi: { title: "Kuinka saada premium-komentosarjani ilmaiseksi", button: "Jatka" },
+  fi: { title: "Kuinka saada premium-komentosarjani ilmaiseksi", button: "Jatka", watchText: "Katso video loppuun asti" },
   // Czech
   cs: { title: "Jak získat své prémiové skripty zdarma", button: "Pokračovat" },
   // Hungarian
