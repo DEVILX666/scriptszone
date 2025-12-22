@@ -1,7 +1,7 @@
 // Complete translations for all world languages
-export const translations: Record<string, { title: string; button: string }> = {
+export const translations: Record<string, { title: string; button: string; watchText?: string }> = {
   // English
-  en: { title: "How To Get My Premium Scripts For Free", button: "Continue" },
+  en: { title: "How To Get My Premium Scripts For Free", button: "Continue", watchText: "Watch the video till the end" },
   // Spanish
   es: { title: "Cómo Obtener Mis Scripts Premium Gratis", button: "Continuar" },
   // French
@@ -261,7 +261,7 @@ export const translations: Record<string, { title: string; button: string }> = {
   // Malagasy
   mg: { title: "Ahoana No Ahazoana Ny Premium Scripts Ahy Maimaimpoana", button: "Tohizo" },
   // Default fallback
-  default: { title: "How To Get My Premium Scripts For Free", button: "Continue" },
+  default: { title: "How To Get My Premium Scripts For Free", button: "Continue", watchText: "Watch the video till the end" },
 }
 
 // Country code to language mapping
