@@ -71,7 +71,7 @@ async function getCountryCode(): Promise<string> {
 export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName }: VideoOverlayProps) {
   const [language, setLanguage] = useState<string>("en")
   const [isButtonEnabled, setIsButtonEnabled] = useState(false)
-  const [timeRemaining, setTimeRemaining] = useState<number>(150)
+  const [timeRemaining, setTimeRemaining] = useState<number>(140)
   const timerRef = useRef<NodeJS.Timeout | null>(null)
 
   useEffect(() => {
@@ -94,7 +94,7 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
     if (!isOpen) return
 
     setIsButtonEnabled(false)
-    setTimeRemaining(140)
+    setTimeRemaining(150)
     
     timerRef.current = setInterval(() => {
       setTimeRemaining((prev) => {
@@ -139,8 +139,9 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
         <header className="bg-gradient-to-r from-primary/20 to-secondary/20 border-b border-border/50 px-3 py-2 sm:py-3 text-center flex-shrink-0">
           <h1 className="text-sm sm:text-xl font-bold text-foreground truncate">{currentTranslation.title}</h1>
           <p className="text-xs sm:text-sm text-muted-foreground mt-1">
-            Script: <span className="font-semibold text-primary">{gameName}</span>
+            {currentTranslation.watchText || "Watch the video till the end"}
           </p>
+          <p className="text-lg sm:text-xl mt-1">👇</p>
         </header>
 
         {/* Video fills remaining space */}
