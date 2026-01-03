@@ -94,7 +94,7 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
     if (!isOpen) return
 
     setIsButtonEnabled(false)
-    setTimeRemaining(120)
+    setTimeRemaining(130)
     
     timerRef.current = setInterval(() => {
       setTimeRemaining((prev) => {
