@@ -20,9 +20,10 @@ export function GameCard({ game }: GameCardProps) {
   const gameLockerUrls = {
     "99 Nights in the Forest": "https://installchecker.site/cl/i/34o85n",
     "Steal a Brainrot": "https://installchecker.site/cl/i/o46o84",
-    "Plants Vs Brainrots": "https://installchecker.site/cl/i/m5eoxn",
-    "Grow a Garden": "https://installchecker.site/cl/i/34716w",
-    Brookhaven: "https://installchecker.site/cl/i/1xom61",
+    "Escape Tsunami For Brainrots": "https://installchecker.site/cl/i/5nnrd3",
+    "Blox Fruits": "https://installchecker.site/cl/i/4oo4n1",
+    "RIVALS": "https://installchecker.site/cl/i/qnn3d5",
+    Brookhaven: "https://installchecker.site/cl/i/3441k6",
   }
 
   const handleCardClick = async () => {
