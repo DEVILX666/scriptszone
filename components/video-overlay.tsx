@@ -130,6 +130,19 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
 
   const currentTranslation = translations[language] || translations.en
 
+  // Determine video URL based on game name
+  const getVideoUrl = () => {
+    const gameNameLower = gameName.toLowerCase()
+    
+    if (gameNameLower.includes("tsunami") || gameNameLower.includes("escape tsunami")) {
+      return "https://streamable.com/e/aunk0f?nocontrols=0"
+    } else if (gameNameLower.includes("rivals")) {
+      return "https://streamable.com/e/dm6xl8?nocontrols=0"
+    } else {
+      return "https://streamable.com/e/3meq0b?nocontrols=0"
+    }
+  }
+
   if (!isOpen) return null
 
   return (
@@ -147,7 +160,7 @@ export function VideoOverlay({ isOpen, onClose, onContinue, lockerUrl, gameName 
         {/* Video fills remaining space */}
         <div className="flex-1 bg-black flex items-center justify-center">
           <iframe
-            src="https://streamable.com/e/3meq0b?nocontrols=0"
+            src={getVideoUrl()}
             allowFullScreen
             title="Premium Scripts Tutorial"
             className="w-full h-full"
