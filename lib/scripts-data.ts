@@ -40,14 +40,6 @@ export const gameScripts: GameScript[] = [
     features: ["Diamonds Finder", "Godmode", "Kill-Aura", "Auto Rescue Child", "FLY"],
     logoUrl: "https://tr.rbxcdn.com/180DAY-c8912f9bbd8f573fee48f73f0529cf59/150/150/Image/Webp/noFilter",
   },
-  {
-    id: "brookhaven",
-    name: "Brookhaven",
-    description: "",
-    category: "RPG",
-    features: ["Teleport", "Speed Hack", "Godmode", "Item Spawn", "Fly"],
-    logoUrl: "https://tr.rbxcdn.com/180DAY-dd996ac969cb40bbede0512178c95ce9/150/150/Image/Webp/noFilter",
-  },
    {
     id: "brookhaven",
     name: "Blox Fruits",
