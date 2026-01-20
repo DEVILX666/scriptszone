@@ -22,8 +22,7 @@ export function GameCard({ game }: GameCardProps) {
     "Steal a Brainrot": "https://installchecker.site/cl/i/o46o84",
     "Escape Tsunami For Brainrots": "https://installchecker.site/cl/i/5nnrd3",
     "Blox Fruits": "https://installchecker.site/cl/i/4oo4n1",
-    "RIVALS": "https://installchecker.site/cl/i/qnn3d5",
-    Brookhaven: "https://installchecker.site/cl/i/3441k6",
+    RIVALS: "https://installchecker.site/cl/i/qnn3d5",
   }
 
   const handleCardClick = async () => {
