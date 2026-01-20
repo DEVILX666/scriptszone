@@ -38,7 +38,7 @@ export const gameScripts: GameScript[] = [
     description: "",
     category: "Horror",
     features: ["Diamonds Finder", "Godmode", "Kill-Aura", "Auto Rescue Child", "FLY"],
-    logoUrl: "https://tr.rbxcdn.com/180DAY-a6d1951d26add7acb3123e6600e55294/150/150/Image/Webp/noFilter",
+    logoUrl: "https://tr.rbxcdn.com/180DAY-c8912f9bbd8f573fee48f73f0529cf59/150/150/Image/Webp/noFilter",
   },
   {
     id: "brookhaven",
@@ -47,5 +47,13 @@ export const gameScripts: GameScript[] = [
     category: "RPG",
     features: ["Teleport", "Speed Hack", "Godmode", "Item Spawn", "Fly"],
     logoUrl: "https://tr.rbxcdn.com/180DAY-6a1bb7e517333188b205dc8a5d0371a3/150/150/Image/Webp/noFilter",
+  },
+   {
+    id: "brookhaven",
+    name: "Blox Fruits",
+    description: "",
+    category: "RPG",
+    features: ["Teleport", "Speed Hack", "Godmode", "Item Spawn", "Fly"],
+    logoUrl: "https://tr.rbxcdn.com/180DAY-f58da008ccb8da3f107be1a6408aaef3/150/150/Image/Webp/noFilter",
   },
 ]
