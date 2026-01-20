@@ -46,7 +46,7 @@ export const gameScripts: GameScript[] = [
     description: "",
     category: "RPG",
     features: ["Teleport", "Speed Hack", "Godmode", "Item Spawn", "Fly"],
-    logoUrl: "https://tr.rbxcdn.com/180DAY-6a1bb7e517333188b205dc8a5d0371a3/150/150/Image/Webp/noFilter",
+    logoUrl: "https://tr.rbxcdn.com/180DAY-dd996ac969cb40bbede0512178c95ce9/150/150/Image/Webp/noFilter",
   },
    {
     id: "brookhaven",
