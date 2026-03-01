@@ -11,7 +11,7 @@ export function Navbar() {
               <Image src="https://i.imgur.com/TxBcnpt.png" alt="ScriptsZone Logo" fill className="object-contain" />
             </div>
             <span className="text-lg sm:text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent tracking-wide">
-              SCRIPTSZONE
+              SCRIPTSBASE
             </span>
           </Link>
         </div>
