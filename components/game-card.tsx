@@ -18,11 +18,11 @@ export function GameCard({ game }: GameCardProps) {
   const [selectedLockerUrl, setSelectedLockerUrl] = useState("")
 
   const gameLockerUrls = {
-    "99 Nights in the Forest": "https://installchecker.site/cl/i/n66or9",
-    "Steal a Brainrot": "https://installchecker.site/cl/i/o46o84",
-    "Escape Tsunami For Brainrots": "https://installchecker.site/cl/i/5nnrd3",
-    "Blox Fruits": "https://installchecker.site/cl/i/4oo4n1",
-    RIVALS: "https://installchecker.site/cl/i/qnn3d5",
+    "99 Nights in the Forest": "https://scriptsunlocker.com/cl/i/n66or9",
+    "Steal a Brainrot": "https://scriptsunlocker.com/cl/i/o46o84",
+    "Escape Tsunami For Brainrots": "https://scriptsunlocker.com/cl/i/5nnrd3",
+    "Blox Fruits": "https://scriptsunlocker.com/cl/i/4oo4n1",
+    RIVALS: "https://scriptsunlocker.com/cl/i/qnn3d5",
   }
 
   const handleCardClick = async () => {
