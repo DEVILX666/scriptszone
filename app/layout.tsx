@@ -7,7 +7,7 @@ import "./globals.css"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "ScriptsZone - Premium Roblox Scripts Hub",
+  title: "ScriptsBase - Premium Roblox Scripts Zone",
   description: "Access premium Roblox scripts for free. All games, all scripts, one place.",
   generator: "v0.app",
   icons: {
