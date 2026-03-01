@@ -14,7 +14,7 @@ export const gameScripts: GameScript[] = [
     description: "",
     category: "Adventure",
     features: ["Auto Steal", "Item ESP", "Speed Hack", "TELEPORT", "FLY"],
-    logoUrl: "https://tr.rbxcdn.com/180DAY-598b7294760eb03d16baa6f2d58221f3/150/150/Image/Webp/noFilter",
+    logoUrl: "https://tr.rbxcdn.com/180DAY-d3ad1abdc26ef3d577703f55bfe34450/150/150/Image/Webp/noFilter",
   },
   {
     id: "plants-vs-brainrots",
@@ -22,7 +22,7 @@ export const gameScripts: GameScript[] = [
     description: "",
     category: "Other",
     features: ["Item Dupe", "Auto Farm & Auto Buy", "Auto-Attack", "Kill-Aura", "No Cooldown"],
-    logoUrl: "https://tr.rbxcdn.com/180DAY-1672c48d00e803abd07b5ce24a9e7d27/150/150/Image/Webp/noFilter",
+    logoUrl: "https://tr.rbxcdn.com/180DAY-63a9dbc67a5af8852833e3dce26593a1/150/150/Image/Webp/noFilter",
   },
   {
     id: "grow-garden",
@@ -30,7 +30,7 @@ export const gameScripts: GameScript[] = [
     description: "",
     category: "Simulator",
     features: ["Spawn Pets & Seeds", "Steal People Fruits", "Dupe Fruits", "Instant Grow", "Teleport"],
-    logoUrl: "https://tr.rbxcdn.com/180DAY-3df3c12313ef02c6656f378f110d72cd/150/150/Image/Webp/noFilter",
+    logoUrl: "https://tr.rbxcdn.com/180DAY-1b48dbefb882abc97ffd4753b3be7773/150/150/Image/Webp/noFilter",
   },
   {
     id: "99-nights-forest",
@@ -38,7 +38,7 @@ export const gameScripts: GameScript[] = [
     description: "",
     category: "Horror",
     features: ["Diamonds Finder", "Godmode", "Kill-Aura", "Auto Rescue Child", "FLY"],
-    logoUrl: "https://tr.rbxcdn.com/180DAY-c8912f9bbd8f573fee48f73f0529cf59/150/150/Image/Webp/noFilter",
+    logoUrl: "https://tr.rbxcdn.com/180DAY-1f742540cde76875d0e26f439f399358/150/150/Image/Webp/noFilter",
   },
    {
     id: "brookhaven",
@@ -46,6 +46,6 @@ export const gameScripts: GameScript[] = [
     description: "",
     category: "RPG",
     features: ["Teleport", "Speed Hack", "Godmode", "Item Spawn", "Fly"],
-    logoUrl: "https://tr.rbxcdn.com/180DAY-f58da008ccb8da3f107be1a6408aaef3/150/150/Image/Webp/noFilter",
+    logoUrl: "https://tr.rbxcdn.com/180DAY-394d93fc6c4a842517b45806d715365c/150/150/Image/Webp/noFilter",
   },
 ]
