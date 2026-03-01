@@ -30,7 +30,7 @@ export const gameScripts: GameScript[] = [
     description: "",
     category: "Simulator",
     features: ["Spawn Pets & Seeds", "Steal People Fruits", "Dupe Fruits", "Instant Grow", "Teleport"],
-    logoUrl: "https://tr.rbxcdn.com/180DAY-1b48dbefb882abc97ffd4753b3be7773/150/150/Image/Webp/noFilter",
+    logoUrl: "https://tr.rbxcdn.com/180DAY-394d93fc6c4a842517b45806d715365c/150/150/Image/Webp/noFilter",
   },
   {
     id: "99-nights-forest",
